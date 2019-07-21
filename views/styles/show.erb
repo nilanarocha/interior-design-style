@@ -1,0 +1,13 @@
+<h2><%= @style["name"] %></h2>
+<p>description: <%= @style["description"] %></p>
+<% unless @style["image"].nil? || @style["image"].empty? %>
+  <img class="feature" src="<%= @style["image"] %>" alt="<%= @style["name"] %>">
+<% end %>
+<% if @style["image"].nil? || @style["image"].empty? %>
+  <img class="feature" src="http://live.worldofspectrum.org/addons/shared_addons/themes/bootstrap/img/image-not-available.png" alt="not found image">
+<% end %>
+<div class="controls">
+  <a class="controls-link" href="/styles/<%= @style["id"] %>/edit">Edit style</a>
+  <a class="controls-link" href="/styles/<%= @style["id"] %>/delete">Delete style</a>
+  <a class="controls-link" href="/styles">Back to the list</a>
+</div>

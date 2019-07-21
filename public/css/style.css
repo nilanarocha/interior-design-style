@@ -1,0 +1,123 @@
+.style-item-img {
+    height: 150px;
+}
+
+.style-item {
+    width: 300px;
+    display: inline-block;
+    border: 1px solid grey;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 5px 5px grey;
+    border-radius: 0.3px;
+}
+
+.style-item a {
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.default-margin {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+.margin-left0 {
+    margin-left: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+body {
+    color: rgb(104, 109, 109);
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+}
+
+.menu {
+    background: rgb(104, 109, 109);
+}
+
+a {
+    color: rgb(104, 109, 109);
+}
+
+textarea {
+    width: 490px;
+    height: 300px;
+    box-shadow: 5px 5px grey;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+input {
+    width: 490px;
+    padding: 5px;
+    box-shadow: 5px 5px grey;
+    border: 1px solid grey;
+}
+
+select {
+    width: 500px;
+}
+
+.form-item {
+    padding: 10px;
+}
+
+.form-item-label {
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.controls-link {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(104, 109, 109);
+    margin-right: 20px;
+    padding: 20px;
+    display: inline;
+    box-shadow: 5px 5px grey;
+    border-radius: 0.3px;
+    border: 1px solid white;
+}
+
+.controls {
+    margin-top: 60px;
+}
+
+.feature {
+    width: 100%;
+}
+
+.block {
+    display: inline-block;
+}
+
+.style-item-wrapper {
+    margin-top: 30px;
+}

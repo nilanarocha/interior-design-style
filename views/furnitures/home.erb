@@ -1,0 +1,19 @@
+
+<h2>Furnitures</h2>
+<p>Here are the list of trends of furnitures.</p>
+<a class="controls-link block" href="/furnitures/new"> + New</a>
+<div class="style-item-wrapper">
+  <% @furnitures.each do |style| %>
+    <div class="style-item">
+      <a href="/furnitures/<%= style["id"] %>">
+        <% unless style["image"].nil? || style["image"].empty? %>
+          <img class="style-item-img" src="<%= style["image"] %>" alt="<%= style["name"] %>">
+        <% end %>
+        <% if style["image"].nil? || style["image"].empty? %>
+          <img class="style-item-img" src="http://live.worldofspectrum.org/addons/shared_addons/themes/bootstrap/img/image-not-available.png" alt="not found image">
+        <% end %>
+        <p><%= style["name"] %></p>
+      </a>
+    </div>
+  <% end %>
+</div>

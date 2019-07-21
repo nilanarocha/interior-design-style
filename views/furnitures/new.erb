@@ -1,0 +1,26 @@
+<h2>New Furniture</h2>
+<form action="/furnitures" method="post">
+  <div class="form-item">
+    <label class="form-item-label" for="name">Name:</label>
+    <input type="text" name="name" placeholder="Style Name" required>
+  </div>
+  <div class="form-item">
+    <label for="interior_design_style_id" class="form-item-label">Interior Design Style</label>
+    <select name="interior_design_style_id" id="interior_design_style_id">
+      <% @styles.each do |style| %>
+        <option value="<%= style["id"]%>"><%= style["name"]%></option>
+      <% end %>
+    </select>
+  </div>
+  <div class="form-item">
+    <label class="form-item-label" for="image">Image:</label>
+    <input type="url" name="image" placeholder="http://...">
+  </div>
+  <div class="form-item">
+    <label class="form-item-label" for="image">Description:</label>
+    <textarea name="description" placeholder="Edit style description"></textarea>
+  </div>
+  <div class="form-item">
+    <button class="controls-link" type="submit">Create furniture</button>
+  </div>
+</form>

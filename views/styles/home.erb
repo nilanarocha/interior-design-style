@@ -1,0 +1,18 @@
+<h2>Interior Design Style</h2>
+<p>Here are the list of trends of interior design.</p>
+<a class="controls-link block" href="/styles/new"> + New</a>
+<div class="style-item-wrapper">
+  <% @interior_design_style.each do |style| %>
+    <div class="style-item">
+      <a href="/styles/<%= style["id"] %>">
+        <% unless style["image"].nil? || style["image"].empty? %>
+          <img class="style-item-img" src="<%= style["image"] %>" alt="<%= style["name"] %>">
+        <% end %>
+        <% if style["image"].nil? || style["image"].empty? %>
+          <img class="style-item-img" src="http://live.worldofspectrum.org/addons/shared_addons/themes/bootstrap/img/image-not-available.png" alt="not found image">
+        <% end %>
+        <p><%= style["name"] %></p>
+      </a>
+    </div>
+  <% end %>
+</div>

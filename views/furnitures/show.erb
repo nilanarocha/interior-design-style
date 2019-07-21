@@ -1,0 +1,14 @@
+<h2><%= @furniture["name"] %></h2>
+<p>Furniture style: <%= @interior_design_style_name %></p>
+<p>Description: <%= @furniture["description"] %></p>
+<% unless @furniture["image"].nil? || @furniture["image"].empty? %>
+  <img class="feature" src="<%= @furniture["image"] %>" alt="<%= @furniture["name"] %>">
+<% end %>
+<% if @furniture["image"].nil? || @furniture["image"].empty? %>
+  <img class="feature" src="http://live.worldofspectrum.org/addons/shared_addons/themes/bootstrap/img/image-not-available.png" alt="not found image">
+<% end %>
+<div class="controls">
+  <a class="controls-link" href="/furnitures/<%= @furniture["id"] %>/edit">Edit furniture</a>
+  <a class="controls-link" href="/furnitures/<%= @furniture["id"] %>/delete">Delete furniture</a>
+  <a class="controls-link" href="/furnitures">Back to the list</a>
+</div>
